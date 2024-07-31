@@ -4,17 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMPLY CHOCOLATE</title>
+    <!--#region Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--#endregion Fonts-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--#region header-->
-    <header>
-      <a href="./index.html"> SIMPLY CHOCOLATE </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#how-its-made">How it’s made?</a></li>
-          <li><a href="#chocolate">Chocolate is loved</a></li>
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <span class="logo-span">SIMPLY</span> CHOCOLATE
+      </a>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="./index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#how-its-made">How it’s made?</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#chocolate">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -22,20 +38,20 @@
 
     <main>
       <!--#region hero-->
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#">How it’s made</a>
-        <a href="#">scroll down</a>
+        <button class="hero-btn" type="button">Buy now</button>
+        <a class="hero-made-link" href="#">How it’s made</a>
+        <a class="down-link" href="#footer">scroll down</a>
       </section>
       <!--#endregion hero-->
       <!--#region benefits-->
-      <section>
-        <ul>
-          <li>
+      <section class="benefits">
+        <ul class="benefits-list">
+          <li class="benefits-article">
             <h3>Unsurpassed taste</h3>
             <p>
               Crafted with the finest quality cocoa beans and a dedication to
@@ -44,7 +60,7 @@
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
+          <li class="benefits-article">
             <h3>Affordable price</h3>
             <p>
               Indulge in high-quality chocolate without breaking the bank with
@@ -54,7 +70,7 @@
               affordable luxury today. Affordable price Own production
             </p>
           </li>
-          <li>
+          <li class="benefits-article">
             <h3>Own production</h3>
             <p>
               We take pride in our own production process, ensuring that every
@@ -67,16 +83,19 @@
       </section>
       <!--#endregion benefits-->
       <!--#region ingredients-->
-      <section>
-        <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
-        <p>
-          At Simply Chocolate, we believe that the secret to exceptional
+      <section class="ingredients">
+        <h2 class="ingredients-title">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL
+          <span class="span-taste">TASTE</span> SENSATION
+        </h2>
+        <p class="ingredients-article">
+          At Simply Chocolate, we believe that tpanhe secret to exceptional
           chocolate is in the details. From the sourcing of the finest
           ingredients to the careful crafting of each individual piece, every
           step of our process adds up to one exceptional taste sensation.
         </p>
-        <ul>
-          <li>
+        <ul class="ingredients-list">
+          <li class="milk-chocolate">
             <img
               src="./images/ingredients/milk-chocolate.png"
               alt="milk-chocolate"
@@ -85,7 +104,7 @@
             />
             <p>MILK CHOCOLATE</p>
           </li>
-          <li>
+          <li class="milk">
             <img
               src="./images/ingredients/milk.png"
               alt="milk"
@@ -94,7 +113,7 @@
             />
             <p>MILK</p>
           </li>
-          <li>
+          <li class="nuts">
             <img
               src="./images/ingredients/nuts.png"
               alt="nuts"
@@ -103,7 +122,7 @@
             />
             <p>NUTS</p>
           </li>
-          <li>
+          <li class="semi-sweet-chocolate">
             <img
               src="./images/ingredients/semi-sweet-chocolate.png"
               alt="semi-sweet-chocolate"
@@ -116,38 +135,48 @@
       </section>
       <!--#endregion ingredients-->
       <!--#region how its made-->
-      <section id="how-its-made"><h2>HOW IT’S made?</h2></section>
-      <img
-        src="./images/How-its-made/picture-cooking-chokolate.png"
-        alt="picture-cooking-chokolate"
-        width="600"
-        height="400"
-      />
-      <h3>
-        Try our chocolates today and discover the perfect balance of flavor
-      </h3>
-      <ul>
-        <li>
-          Heat the milk in a saucepan without bringing it to a boil. Add sugar
-          and cocoa powder.
-        </li>
-        <li>At the same time, prepare a water bath. Melt the butter on it.</li>
-        <li>
-          "Mix" the milk mixture and already liquid butter. Mix thoroughly with
-          a silicone spatula so that the mass becomes uniform and silky.
-        </li>
-        <li>Heat the mixture over low heat, letting it barely boil.</li>
-        <li>
-          Pour the chocolate into special containers (can be replaced with ice
-          molds). Allow to cool and harden.
-        </li>
-      </ul>
+      <section class="how-its-made" id="how-its-made">
+        <h2 class="how-its-made-title">
+          HOW IT’S <span class="span-made">made?</span>
+        </h2>
+
+        <img
+          class="how-its-made-image"
+          src="./images/How-its-made/picture-cooking-chokolate.png"
+          alt="picture-cooking-chokolate"
+          width="600"
+          height="400"
+        />
+        <h3 class="how-its-made-list-title">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="how-its-made-list">
+          <li class="how-its-made-list-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li class="how-its-made-list-item">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="how-its-made-list-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="how-its-made-list-item">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="how-its-made-list-item">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+      </section>
       <!--endregion how its made-->
       <!--#region Reviews-->
-      <section id="chocolate">
-        <h2>chocolate is loved</h2>
-        <ul>
-          <li>
+      <section class="Reviews" id="chocolate">
+        <h2 class="reviews-title">chocolate is loved</h2>
+        <ul class="reviews-list">
+          <li class="reviews-list-item">
             <img
               src="./images/Reviews/picture-victoria-dobrzhanska.png"
               alt="picture-victoria-dobrzhanska"
@@ -160,7 +189,7 @@
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li>
+          <li class="reviews-list-item">
             <img
               src="./images/Reviews/picture-nazar-babenko.png"
               alt="picture-nazar-babenko"
@@ -175,7 +204,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="reviews-list-item">
             <img
               src="./images/Reviews/picture-olena-kampusch.png"
               alt="picture-olena-kampusch"
@@ -196,7 +225,7 @@
     </main>
 
     <!--#region footer-->
-    <footer>
+    <footer class="footer" id="footer">
       <p>Chocolate a delicious cure for a bad day</p>
       <address>
         <p>Contact us</p>

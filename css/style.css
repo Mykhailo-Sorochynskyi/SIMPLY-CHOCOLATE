@@ -1,0 +1,221 @@
+/* #region body*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* #endregion body*/
+
+/* #region Header*/
+.header {
+}
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+.logo-span {
+  font-style: italic;
+}
+.nav {
+}
+.menu {
+}
+.menu-item {
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.memu-link:hover,
+.menu-link:focus {
+  color: #fd9222;
+}
+/* #endregion Header*/
+
+/* #region Main*/
+
+/*#region Hero*/
+.hero {
+  background-color: #1e1823;
+}
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21429;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background: #fd9222;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+.hero-made-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-made-link:hover,
+.hero-made-link:focus {
+  color: #fd9222;
+}
+.down-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.down-link:hover,
+.down-link:focus {
+  color: #fd9222;
+}
+/*#endregion Hero*/
+
+/*#region Benefits*/
+.benefits {
+  background: #1e1823;
+}
+.benefits-list {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.benefits-article {
+}
+/*#endregion Benefits*/
+
+/*#region ingredients*/
+.ingredients {
+}
+.ingredients-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.span-taste {
+  color: #fd9222;
+}
+.ingredients-article {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+.ingredients-list {
+}
+.milk-chocolate {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fd9222;
+}
+.milk {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  background: #fff;
+}
+.nuts {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1e1823;
+}
+.semi-sweet-chocolate {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  background: #fff;
+}
+/* #endregion ingredients*/
+
+/*#region How Its made*/
+
+.how-its-made {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.how-its-made-title {
+}
+.span-made {
+  color: #fd9222;
+}
+.how-its-made-image {
+}
+.how-its-made-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #111;
+}
+.how-its-made-list {
+  list-style-type: square;
+}
+.how-its-made-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+/* #endregion How its made*/
+
+/*#region */
+
+/* #endregion */
+
+/* #endregion Main*/
+/*#region */
+/* #endregion */
