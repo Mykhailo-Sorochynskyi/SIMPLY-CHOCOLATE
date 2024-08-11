@@ -1,4 +1,4 @@
-/* #region body*/
+/* #region general*/
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -8,17 +8,57 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+/* #endregion general*/
+
+/*#region reset*/
+
 ul,
 ol {
   list-style-type: none;
 }
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 a {
   text-decoration: none;
 }
-/* #endregion body*/
-
+/*#endregion reset*/
+.container {
+  width: 1168px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* #region Header*/
 .header {
+}
+.nav {
 }
 .logo {
   font-style: normal;
@@ -31,13 +71,17 @@ a {
 .logo-span {
   font-style: italic;
 }
-.nav {
-}
+
 .menu {
+  display: flex;
+  gap: 24px;
 }
 .menu-item {
 }
 .menu-link {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -45,8 +89,7 @@ a {
   color: #111;
 }
 
-.memu-link:hover,
-.menu-link:focus {
+.menu-link:hover {
   color: #fd9222;
 }
 /* #endregion Header*/
@@ -55,21 +98,43 @@ a {
 
 /*#region Hero*/
 .hero {
+  margin-bottom: 72px;
   background-color: #1e1823;
+  border-radius: 30px;
+  margin-bottom: 72px;
 }
-.title {
+.hero-container {
+  padding-top: 381px;
+  padding-bottom: 40px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.hero-title {
+  max-width: 484px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21429;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+}
+.hero-btns-box {
+  display: flex;
+  align-items: center;
 }
 .hero-btn {
+  margin-right: 14px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   background: #fd9222;
+  border-radius: 100px;
+  min-width: 144px;
+  min-height: 45px;
+  padding: 14px 40px;
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -78,15 +143,23 @@ a {
 }
 
 .hero-made-link {
+  display: block;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  min-width: 183px;
+  min-height: 45px;
+  line-height: 45px;
+  text-align: center;
 }
 .hero-made-link:hover,
 .hero-made-link:focus {
   color: #fd9222;
 }
 .down-link {
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
@@ -102,19 +175,42 @@ a {
 /*#region Benefits*/
 .benefits {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 .benefits-list {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: #fafafa;
+
+  gap: 70px;
 }
-.benefits-article {
+.benefits-item {
+  width: 308px;
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
 }
 /*#endregion Benefits*/
 
 /*#region ingredients*/
+
 .ingredients {
+  margin-bottom: 100px;
 }
 .ingredients-title {
   font-weight: 600;
@@ -124,20 +220,55 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  max-width: 411px;
+  margin-bottom: 28px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .span-taste {
   color: #fd9222;
 }
-.ingredients-article {
+.ingredients-content {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  max-width: 486px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 .ingredients-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
+.ingredients-list > li {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  border-radius: 15px;
+
+  width: calc((100% - 19px * 3) / 4);
+}
+.ingradients-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+  margin-top: 28px;
+}
+
+.card-text-box {
+  margin-bottom: 28px;
+  margin-left: 32px;
+}
+
+/*#region card ingradients*/
 .milk-chocolate {
   font-weight: 600;
   font-size: 14px;
@@ -155,6 +286,7 @@ a {
   text-transform: uppercase;
   color: #111;
   background: #fff;
+  border: 1px solid #fd9222;
 }
 .nuts {
   font-weight: 600;
@@ -173,7 +305,10 @@ a {
   text-transform: uppercase;
   color: #111;
   background: #fff;
+  border: 1px solid #fd9222;
 }
+/*#endregion card ingradients*/
+
 /* #endregion ingredients*/
 
 /*#region How Its made*/
@@ -186,8 +321,10 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 100px;
 }
 .how-its-made-title {
+  margin-bottom: 50px;
 }
 .span-made {
   color: #fd9222;
@@ -199,6 +336,20 @@ a {
   font-size: 18px;
   line-height: 1.33333;
   color: #111;
+  margin-bottom: 28px;
+  text-align: left;
+  text-transform: none;
+}
+.how-its-made-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.how-its-made-box-content {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  padding: 32px;
+  max-width: 452px;
 }
 .how-its-made-list {
   list-style-type: square;
@@ -209,13 +360,165 @@ a {
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: #111;
+  margin-bottom: 24px;
+  text-align: left;
+  text-transform: none;
+  margin-left: 16px;
 }
 /* #endregion How its made*/
 
-/*#region */
+/*#region Reviews*/
+.reviews {
+}
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fd9222;
+  margin-bottom: 50px;
+}
+.span-chocolate {
+  color: #1e1823;
+}
+.reviews-list {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews-list-item {
+  width: calc((100% - 28px * 2) / 3);
+  margin-bottom: 50px;
+}
+.reviews-box {
+  display: block;
 
-/* #endregion */
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 360px;
+  height: 200px;
+  position: relative;
+}
 
+.reviews-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%; /* центрування зображення по горизонталі */
+  top: 0; /* встановлення зображення на верхній край контейнера */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* зсув зображення назад на 50% його власних розмірів для точного центрування */
+}
+.reviews-contacts {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+  margin-bottom: 20px;
+  margin-top: 56px;
+}
+.reviews-opinion {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.review-btn {
+  display: block;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.review-btn:hover {
+  background-color: #fd9222;
+  color: #fff;
+}
+/* #endregion Reviews*/
+
+/*#region footer */
+.footer {
+  background-color: #1e1823;
+}
+.footer-blok {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 32px;
+  padding-top: 50px;
+  padding-bottom: 54px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.span-footer-text {
+  color: #fff;
+}
+.footer-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21429;
+  letter-spacing: -0.02em;
+  color: #fd9222;
+  display: block;
+  max-width: 300px;
+}
+.title-contact-us {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+
+  color: #fff;
+  margin-bottom: 14px;
+  text-align: left;
+}
+.footer-adress {
+  padding-right: 32px;
+}
+.footer-adress-list {
+}
+.footer-adress-list-item {
+}
+.footer-adress-link {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: left;
+}
+.footer-menu {
+}
+.footer-menu-list {
+  display: flex;
+  gap: 24px;
+  padding-left: 32px;
+  padding-bottom: 86px;
+  padding-top: 24px;
+}
+.footer-menu-list-item {
+}
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+/* #endregion footer */
 /* #endregion Main*/
-/*#region */
-/* #endregion */

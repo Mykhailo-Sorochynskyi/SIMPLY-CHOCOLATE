@@ -1,3 +1,3 @@
 # SIMPLY-CHOCOLATE
 
-Class work v3.0
+Class work v3.1
